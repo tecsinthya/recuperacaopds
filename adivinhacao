@@ -1,0 +1,20 @@
+def dica(numeroEscolhido: int):
+    print("Escolhido", numeroEscolhido, "Secreto", numeroSecreto)
+    if numeroEsolhido > numeroSecreto:
+        return "O numero escolhido e Maior que o numero secreto", numeroEscolhido
+    else:
+        return "o numero escolhido e Menor que o numero secreto", numeroEscolhido
+
+def NivelDificuldade():
+    print("qual o nivel de dificuldade?")
+    print("(1) facil (2) medio (3) dificil")
+    dificuldade = int(int("defina o nivel:" ))
+    global tentativas 
+    if (dificuldade == 1):
+         tentativas = 10 
+    elif (dificuldade == 2):
+        tentativas = 8 
+    else:
+        tentativas = 6
+        
+    jogar()
